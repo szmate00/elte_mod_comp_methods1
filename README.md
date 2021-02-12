@@ -6,3 +6,8 @@ Repository for my coursework in the  "Modern Computational Methods in Physics 1"
 **Subject code:** korszam1f19va<br>
 **Credits:** 6<br>
 
+## Homeworks
+TBA
+
+## Project description
+**Shortest path alogrithm** Implementing Dijkstra's Shortest Path First algorithm
