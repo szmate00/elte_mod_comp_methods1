@@ -10,4 +10,4 @@ Repository for my coursework in the  "Modern Computational Methods in Physics 1"
 TBA
 
 ## Project description
-**Shortest path alogrithm** Implementing Dijkstra's Shortest Path First algorithm
+**Shortest path alogrithm** Implementation of a shortest path algorithm (eg. inspired after a recent Bosch competitions, where the a car has to travel from $A$ to $B$ based on average journey times on a graph. In the next turn it was varied so that there were traffic lights with known timings too in the graph. Random plugs were also considered in the third round). The point is to find the Dijkstra algorithm and implement it.
