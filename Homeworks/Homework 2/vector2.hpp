@@ -2,17 +2,6 @@
 #include <istream>
 #include <math.h> 
 
-
-/*
-skalrááral szorzás;
-kivonás;
-double dot(Vector2d const&, Vector2d const&);
-double length(Vector2d const&);
-double sqlength(Vector2d const&);
-Vector2d normalize(Vectord const&);
-beolvasni és kiírni (<<, >>)
-*/
-
 // defining vector struct with two elements
 template<typename T>
 struct Vector2d
