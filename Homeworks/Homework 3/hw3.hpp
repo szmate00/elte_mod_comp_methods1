@@ -22,15 +22,24 @@ T D(T x, double h){ return (func(x + h) - func(x - h)) / (2 * h); }
 
 // 4th order Richardson
 template <typename T> 
-T S(T x, double h) { return (4 * D(x, h) - D(x, 2 * h) / 3); }
+T S(T x, double h) { return (4 * D(x, h) - D(x, 2 * h)) / 3; }
 
 // 6th order Richardson
 template <typename T> 
-T Richardson_6th(T x, double h) { return (16 * S(x, h) - S(x, 2 * h) / 15); }
+T Richardson_6th(T x)
+{   
+    double h = 1;
 
-// Arc length
-template <typename T> 
-T arc(T x, double h) { return sqrt(1 + (Richardson_6th(x, h) * Richardson_6th(x, h))); }
+    return (16 * S(x, h) - S(x, 2 * h)) / 15;
+}
+
+// Arc (sqrt(1 + f'(x)^2))
+double arc(double x)
+{ 
+    double f_diff = Richardson_6th(x);
+
+    return sqrt(1 + (f_diff * f_diff));
+}
 
 
 // Midpoint/rectangle integration

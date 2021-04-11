@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 
 #include "hw3.hpp"
 
@@ -28,9 +29,16 @@ double function(double x)
 
 int main()
 {
-    cout << "Midpoint integral: " << midpoint_integral(function, 0.0, 200.0, 269) << endl;
-    cout << "Trapezoidal integral: " << trapezoidal_integral(function, 0.0, 200.0, 380) << endl;
-    cout << "Simpson's 1/3 rule: " << simpson_integral(function, 0.0, 200.0, 4) << endl;
+    std::ofstream ofile ("output.txt");
+
+    if (ofile.is_open())
+    {
+        ofile << "Midpoint integral:\tTrapezoidal integral:\tSimpson's 1/3 rule:" << endl;
+        ofile << midpoint_integral(arc, 0.0, 200.0, 269) << ",\t\t\t";
+        ofile << trapezoidal_integral(arc, 0.0, 200.0, 380) << ",\t\t\t\t";
+        ofile << simpson_integral(arc, 0.0, 200.0, 4);
+        ofile.close();
+    }
 
     return 0;
 }
