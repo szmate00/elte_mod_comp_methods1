@@ -7,10 +7,13 @@
 using std::cout;
 using std::endl;
 using std::list;
+using std::set;
 using std::vector;
 using std::pair;
 using std::make_pair;
-using std::set;
+
+
+// TODO: implement other pathfinding algorithms
 
 // funny number
 #define INF 6969
@@ -160,6 +163,8 @@ void Graph::Dijkstra(int source, int target)
             }
         }
     }
+
     display_Dijkstra(distances, parents, source, target);
+
 }
 
