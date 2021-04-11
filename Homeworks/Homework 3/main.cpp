@@ -33,10 +33,9 @@ int main()
 
     if (ofile.is_open())
     {
-        ofile << "Midpoint integral:\tTrapezoidal integral:\tSimpson's 1/3 rule:" << endl;
-        ofile << midpoint_integral(arc, 0.0, 200.0, 269) << ",\t\t\t";
-        ofile << trapezoidal_integral(arc, 0.0, 200.0, 380) << ",\t\t\t\t";
-        ofile << simpson_integral(arc, 0.0, 200.0, 4);
+        ofile << "Midpoint integral: " << midpoint_integral(arc, 0.0, 200.0, 269) << ",\t";
+        ofile << "Trapezoidal integral: " <<trapezoidal_integral(arc, 0.0, 200.0, 380) << ",\t";
+        ofile << "Simpson's 1/3 rule: " << simpson_integral(arc, 0.0, 200.0, 4);
         ofile.close();
     }
 

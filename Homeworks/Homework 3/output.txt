@@ -1,2 +1,1 @@
-Midpoint integral:	Trapezoidal integral:	Simpson's 1/3 rule:
-205.376,			205.902,				205.376
+Midpoint integral: 205.376,	Trapezoidal integral: 205.902,	Simpson's 1/3 rule: 205.376
