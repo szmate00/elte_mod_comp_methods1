@@ -8,12 +8,13 @@ using std::cosh;
 const int F = 900;           // N
 const double q = 1.8;        // N/m
 const int a = 200;           // m
+const int height = 35;           // m
 
 
 // Hyperbolic function describing the shape of the cable
 double func(double x)
 {
-    return F / q * (cosh(q / F * x) - cosh( (q * a) / (2 * F)) );
+    return F / q * (cosh(q / F * x) - cosh( (q * a) / (2 * F)) + height);
 }
 
 // 2nd order Richardson
