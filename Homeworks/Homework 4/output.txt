@@ -1,0 +1,2 @@
+Analitic solution	Newton method	Runge-Kutta
+1.55741				1.55322			1.55741
