@@ -15,6 +15,7 @@ auto solve_Newton(State y0, T t0, T t1, T h, RHS f)
     return y;
 }
 
+// megj.: meg akartam csinálni a Runge-Kutta-Fehlberget is, de nem volt lelkierőm begépelni :((
 
 // Runge-Kutta method
 template<typename State, typename T, typename RHS>
