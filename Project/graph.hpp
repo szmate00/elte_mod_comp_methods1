@@ -13,8 +13,6 @@ using std::pair;
 using std::make_pair;
 
 
-// TODO: implement other pathfinding algorithms
-
 // funny number
 #define INF 6969
 
@@ -62,6 +60,7 @@ class Graph
         void print_adj();
 
         void Dijkstra(int source, int target);
+        
 };
 
 
